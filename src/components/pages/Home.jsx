@@ -10,8 +10,7 @@ const Home = () => {
   useEffect(() => {
     const fetchAll = async () => {
       try {
-        const { data, total_pages, page, total_results } =
-          await fetchMovieAll();
+        const { data } = await fetchMovieAll();
         setMovie(data);
       } catch (error) {
       } finally {
@@ -23,7 +22,7 @@ const Home = () => {
 
   return (
     <ul>
-      {movie?.map(({ id, title, img, date }) => {
+      {movie?.map(({ id, title, img }) => {
         return (
           <Item key={id}>
             <MovieImg src={img} alt="tirle" />
