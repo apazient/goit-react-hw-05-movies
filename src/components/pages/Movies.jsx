@@ -11,7 +11,6 @@ const Movies = () => {
   const query = searchParams.get('query');
   const location = useLocation();
 
-  console.log(location);
   useEffect(() => {
     const fetchAll = async () => {
       try {
@@ -22,7 +21,6 @@ const Movies = () => {
       }
     };
     fetchAll();
-    console.log();
   }, [query]);
 
   const onSubmit = e => {
@@ -35,6 +33,7 @@ const Movies = () => {
         <input
           type="text"
           onChange={e => setValue(e.target.value)}
+          placeholder="Enter your movie..."
           value={value}
         ></input>
         <Search>Search</Search>
