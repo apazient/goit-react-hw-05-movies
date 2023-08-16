@@ -1,19 +1,19 @@
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 
-const useHttp = (appiFnc, param) => {
-  const [data, setData] = useState([]);
-  useEffect(() => {
-    const fetchAll = async () => {
-      try {
-        const res = await appiFnc(param);
-        setData(res);
-      } catch (error) {
-      } finally {
-      }
-    };
-    fetchAll();
-  }, [param]);
-  return [data, setData];
-};
+// const useHttp = (appiFnc, param) => {
+//   const [data, setData] = useState([]);
+//   useEffect(() => {
+//     const fetchAll = async () => {
+//       try {
+//         const res = await appiFnc(param);
+//         setData(res);
+//       } catch (error) {
+//       } finally {
+//       }
+//     };
+//     fetchAll();
+//   }, [param]);
+//   return [data, setData];
+// };
 
-export default useHttp;
+// export default useHttp;
