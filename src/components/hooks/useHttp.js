@@ -1,4 +1,4 @@
-import React from 'react';
+import { useEffect, useState } from 'react';
 
 const useHttp = (appiFnc, param) => {
   const [data, setData] = useState([]);
