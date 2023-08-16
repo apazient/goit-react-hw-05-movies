@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[940],{940:function(e,t,n){n.r(t);n(791);var r=n(184);t.default=function(){return(0,r.jsx)("h1",{children:"Page is not found"})}}}]);
+//# sourceMappingURL=940.983f9277.chunk.js.map
