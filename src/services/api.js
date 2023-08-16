@@ -6,7 +6,7 @@ import {
   reviewsNormalize,
 } from 'helpers/movieNormalize';
 
-const API_KEY = process.env.REACT_APP_KEY;
+const API_KEY = 'f31f6b965c6ae5d645f6378249d44b10';
 
 export const fetchMovieAll = async () => {
   try {
